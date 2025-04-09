@@ -57,3 +57,10 @@
 	FLAG: picoCTF{ca1cu1at1ng_Mach1n3s_477ce}
 
 14. Python Wrangling:
+	cat pw.txt | xclip -selection clipboard
+	python3 ende.py -d flag.txt.en
+	[paste the password]
+	FLAG: picoCTF{4p0110_1n_7h3_h0us3_6008014f}
+
+15. PW Crack 1:
+
