@@ -68,4 +68,24 @@
 	c. python3 level1.py
 	FLAG: picoCTF{545h_r1ng1ng_1b2fd683}
 
-16. 
+16. PW Crack 2:
+	a. wget [URLs]
+	b. python3 level2.py, password:39ce
+	FLAG: picoCTF{tr45h_51ng1ng_502ec42e}
+
+17. PW Crack 3:
+	a. Manually try every password to find the correct one (3rd).
+	b. Modify the last function to loop through the array of options:
+	def level_3_pw_check():
+    		pos_pw_list = ["f09e", "4dcf", "87ab", "dba8", "752e", "3961", "f159"]
+    		for pw in pos_pw_list:
+        		user_pw_hash = hash_pw(pw)
+
+        		if( user_pw_hash == correct_pw_hash ):
+            			print("Welcome back... your flag, user:")
+            			decryption = str_xor(flag_enc.decode(), pw)
+            			print(decryption)
+            			return
+        		print("That password is incorrect")
+
+	FLAG: picoCTF{m45h_fl1ng1ng_cd6ed2eb} 
