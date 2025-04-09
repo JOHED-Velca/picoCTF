@@ -63,4 +63,9 @@
 	FLAG: picoCTF{4p0110_1n_7h3_h0us3_6008014f}
 
 15. PW Crack 1:
+	a. wget [programURL] && wget [flagURL]
+	b. Analize the code to find the password
+	c. python3 level1.py
+	FLAG: picoCTF{545h_r1ng1ng_1b2fd683}
 
+16. 
