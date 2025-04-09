@@ -1,0 +1,7 @@
+# The beginners guide to picoGym - SOLUTION
+
+1. Obedient cat: wget [url], cat flag | xclip -selection clipboard.
+
+2. Super SSH: ssh ctf-player@titan.picoctf.net -p 54763 | input: password.
+
+3. What is netcat: netcat jupiter.challenges.picoctf.org 41120
