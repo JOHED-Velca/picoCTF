@@ -105,4 +105,17 @@ def level_4_pw_check():
 
 	FLAG: picoCTF{fl45h_5pr1ng1ng_d770d48c}
 
-19. 
+19. PW Crack 5: Modify last function.
+	def level_5_pw_check():
+    	f = open('dictionary.txt', 'r')
+    	while True:
+        	user_pw = (f.read(5).strip())
+        	user_pw_hash = hash_pw(user_pw)
+        	if( user_pw_hash == correct_pw_hash ):
+            		print("Welcome back... your flag, user:")
+            		decryption = str_xor(flag_enc.decode(), user_pw)
+            		print(decryption)
+            		return
+    	print("That password is incorrect")
+	
+	FLAG:picoCTF{h45h_sl1ng1ng_36e992a6} 
