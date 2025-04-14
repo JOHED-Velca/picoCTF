@@ -118,4 +118,23 @@ def level_4_pw_check():
             		return
     	print("That password is incorrect")
 	
-	FLAG:picoCTF{h45h_sl1ng1ng_36e992a6} 
+	FLAG:picoCTF{h45h_sl1ng1ng_36e992a6}
+
+20. Emhance!: Analize the content of the image with vim, nano or cat.
+	cat drawing.flag.svg | grep "</tspan>"
+	FLAG: picoCTF{3nh4nc3d_24374675}
+
+21. Big Zip: grep -r 'picoCTF*' *
+	FLAG: picoCTF{gr3p_15_m4g1c_ef8790dc}
+
+22. Vault-door-training:
+	vim [sourceCode]
+	FLAG: picoCTF{w4rm1ng_Up_w1tH_jAv4_eec0716b713}
+
+23. Keygenme-py: Analize the code, realize that we need to convert the username to 
+	sha256 hash (In this case the username is "FREEMAN").
+	Use an online calculator for accuracy.
+
+	FLAG: picoCTF{1n_7h3_|<3y_of_0d208392}
+
+24. Buffer Overflow 0:	
