@@ -4,34 +4,51 @@
 1. Obedient cat: wget [url], cat flag | xclip -selection clipboard.
 	wget https://mercury.picoctf.net/static/a5683698ac318b47bd060cb78685
 	9f23/flag && cat flag | xclip -selection clipboard
+
 	FLAG: picoCTF{s4n1ty_v3r1f13d_4a2b35fd}
-2. Super SSH: ssh ctf-player@titan.picoctf.net -p 54763 | input: password.
+
+2. Super SSH: ssh ctf-player@titan.picoctf.net -p [port#] | input: [password]
+
+    FLAG: picoCTF{s3cur3_c0nn3ct10n_5d09a462}
 
 3. What is netcat: netcat jupiter.challenges.picoctf.org 41120.
 
-4. Decode ROT13: echo "cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_jdJBFOXJ}" 
+    FLAG: picoCTF{nEtCat_Mast3ry_3214be47}
+
+4. Decode ROT13: 
+    a. echo "cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_jdJBFOXJ}" 
 	| tr 'A-Za-z' 'N-ZA-Mn-za-m'
-	python3 -c 'import codecs; print(codecs.encode("cvpbPGS{arkg_gvzr_V\'
+	
+    b. python3 -c 'import codecs; print(codecs.encode("cvpbPGS{arkg_gvzr_V\'
 	yy_gel_2_ebhaqf_bs_ebg13_jdJBFOXJ}", "rot13"))'
+
+    FLAG: picoCTF{next_time_I'll_try_2_rounds_of_rot13_wqWOSBKW}
 
 5.Warmed Up:
 	a. printf "%d\n" 0x3D
 	b. echo "ibase=16; 3D" | bc
 	c. python3 -c 'print(int("3D", 16))'
 
+    FLAG: picoCTF{61}
+
 6. 2Warm:
 	a. echo "obase=2; 42" | bc
 	b. python3 -c 'print(bin(42)[2:])'
 	c. echo "2 o 42 p" | dc
+
+    FLAG: picoCTF{101010}
 
 7. Bases:
 	a. echo "bDNhcm5fdGgzX3IwcDM1" | base64 --decode
 	b. python3 -c 'import base64; print(base64.b64decode(
 	"bDNhcm5fdGgzX3IwcDM1").decode())'
 
+    FLAG:picoCTF{l3arn_th3_r0p35}
+
 8. Wave a flag:
 	wget [url]
 	/warm -h
+
 	FLAG: picoCTF{b1scu1ts_4nd_gr4vy_30e77291}
 
 9. Tab, Tab, Attack:
@@ -39,9 +56,13 @@
 	unzip [file]
 	cd Ad[tab][tab]...
 
+    FLAG: picoCTF{l3v3l_up!_t4k3_4_r35t!_6f332f10}
+
 10. Inspector:
 	Flag is divided in 3 parts and you can find 1/3 of it in the
 	HTML, .css, .js files.
+
+    FLAG: picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?f10be399}
 
 11. Strings it:
 	strings strings | grep -i "picoCTF"  // -i for case sensitive
