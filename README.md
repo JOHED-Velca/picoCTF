@@ -45,33 +45,39 @@
 
 11. Strings it:
 	strings strings | grep -i "picoCTF"  // -i for case sensitive
+
 	FLAG:picoCTF{5tRIng5_1T_d66c7bb7}
 
 12. First Grep:
 	strings file | grep "pico"
+
 	FLAG: picoCTF{grep_is_good_to_find_things_5af9d829}
 
 13. Where are the robots:
 	a. add "/robotos.txt" to the webpage url.
 	b. use the new info to add it to the url instead of the "/robots.txt"
 	like this: https://url//477ce.html
+
 	FLAG: picoCTF{ca1cu1at1ng_Mach1n3s_477ce}
 
 14. Python Wrangling:
 	cat pw.txt | xclip -selection clipboard
 	python3 ende.py -d flag.txt.en
 	[paste the password]
+
 	FLAG: picoCTF{4p0110_1n_7h3_h0us3_6008014f}
 
 15. PW Crack 1:
 	a. wget [programURL] && wget [flagURL]
 	b. Analize the code to find the password
 	c. python3 level1.py
+
 	FLAG: picoCTF{545h_r1ng1ng_1b2fd683}
 
 16. PW Crack 2:
 	a. wget [URLs]
 	b. python3 level2.py, password:39ce
+
 	FLAG: picoCTF{tr45h_51ng1ng_502ec42e}
 
 17. PW Crack 3:
@@ -123,13 +129,16 @@ def level_4_pw_check():
 
 20. Emhance!: Analize the content of the image with vim, nano or cat.
 	cat drawing.flag.svg | grep "</tspan>"
+
 	FLAG: picoCTF{3nh4nc3d_24374675}
 
 21. Big Zip: grep -r 'picoCTF*' *
+
 	FLAG: picoCTF{gr3p_15_m4g1c_ef8790dc}
 
 22. Vault-door-training:
 	vim [sourceCode]
+
 	FLAG: picoCTF{w4rm1ng_Up_w1tH_jAv4_eec0716b713}
 
 23. Keygenme-py: Analize the code, realize that we need to convert the username to 
