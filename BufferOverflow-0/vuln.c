@@ -17,7 +17,7 @@ void vuln(char *input){
   char buf2[16];
   strcpy(buf2, input);
 }
-
+  
 int main(int argc, char **argv){
   
   FILE *f = fopen("flag.txt","r");
