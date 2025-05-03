@@ -168,6 +168,8 @@ def level_4_pw_check():
 
 	**FLAG: picoCTF{1n_7h3_|<3y_of_0d208392}**
 
-24. Buffer Overflow 0:	
+24. Buffer Overflow 0:
+    a. nc saturn.picoctf.net 63633
+    b. insert any character 20 times or more	
 
-	**FLAG: picoCTF{}**
+	**FLAG: picoCTF{ov3rfl0ws_ar3nt_that_bad_9f2364bc}**
